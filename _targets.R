@@ -16,16 +16,16 @@ list(
   tar_target(
     par_list,
     list(
-      trials = 20,
-      games = 20,
-      p1 = .35,
-      p2 = .65,
-      ev0 = .5,
-      ev_var0 = .25,
-      sigN = .25,
-      sigC = 0,
-      alpha = 0.05,
-      temp = 5
+      trials = 20, # number of trials per game
+      games = 20, # number of games per participant
+      p1 = .35, # mean payoff for bandit 1
+      p2 = .65, # mean payoff for bandit 1
+      ev0 = .5, # initial expected value for both
+      ev_var0 = .25, # initial variance for both (for kalman only)
+      sigN = .25, # estimation error (for kalman only)
+      sigC = 0, # drift error (for kalman only)
+      alpha = 0.05, # learning rate (for delta only)
+      temp = 5 # choice inverse temperature
     )
   ),
   # simulate single subject (kalman)
