@@ -1,0 +1,28 @@
+GOALS:
+ - whether information helps (ctrl)
+ - late vs early
+ - info bonus () - LEVEL OF EXPLORATION (proportion of choosing the estimated worse)
+
+MODEL:
+
+Learning:
+v(a) = mean(v(a)) ?+ info bonus + early v late
+v(b) = 
+
+M2: different learning rates for self v other 
+
+Choice:
+(softmax)
+
+
+
+ Learning Rate: 
+ - self v other (actor)
+ - actor reliability?
+ - recency bias self v actor
+
+Choice:
+ - more directed exploration depending on actor reliability / observed window?
+ - more random exploration based on these?
+
+
