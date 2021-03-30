@@ -25,8 +25,8 @@ genConfChecks <- function(numGames=20) {
 }
 
 checkConfMat <-function(confMat) {
-  if (min(apply(mats, 1, diff)) < 2) {
-    bad_cords = which(mats==1, arr.ind=T)
+  if (min(apply(confMat, 1, diff)) < 2) {
+    bad_cords = which(confMat==1, arr.ind=T)
     mes = paste('2 subseqent trials in game', g, 'row',bad_cords[1,1], 'column', bad_cords[1,2])
   }
   else {
